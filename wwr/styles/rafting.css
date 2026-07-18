@@ -18,12 +18,15 @@ body {
   color: var(--primary-color);
 }
 
-header, main, footer {
+header,
+main,
+footer {
   width: 840px;
   margin: 0 auto;
 }
 
-header, footer {
+header,
+footer {
   background-color: var(--secondary-color);
   color: #fff;
   padding: 16px;
@@ -44,12 +47,16 @@ footer p {
   margin: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-nav, p, section, article {
+nav,
+p,
+section,
+article {
   margin: 16px;
   padding: 8px;
 }
@@ -63,6 +70,11 @@ nav a {
 .socialmedia {
   display: flex;
   gap: 12px;
+}
+
+.socialmedia img {
+  width: 32px;
+  height: 32px;
 }
 
 .socialmedia a {
