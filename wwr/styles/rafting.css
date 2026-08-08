@@ -3,6 +3,10 @@
   --secondary-color: #2e86c1;
   --accent1-color: #e74c3c;
   --accent2-color: #f39c12;
+  --light-bg: #f4f6f7;
+  --button-color: #c0392b;
+  --button-hover: #a93226;
+  --nav-hover: #21618c;
   --heading-font: 'Arial', sans-serif;
   --body-font: 'Helvetica', sans-serif;
 }
@@ -55,7 +59,7 @@ header nav a {
 
 header nav a:hover {
   color: var(--accent2-color);
-  background-color: #21618c;
+  background-color: var(--nav-hover);
   border-radius: 4px;
 }
 
@@ -144,7 +148,8 @@ article {
   color: #fff;
 }
 
-.history h2 {
+.history h2,
+.adventures h2 {
   text-align: center;
   margin-bottom: 16px;
 }
@@ -187,7 +192,8 @@ article {
   border-radius: 8px;
 }
 
-.adventure-gallery figcaption {
+.adventure-gallery figcaption,
+.employee-grid figcaption {
   margin-top: 8px;
   font-weight: bold;
   color: var(--primary-color);
@@ -254,12 +260,6 @@ article {
   border: 3px solid var(--secondary-color);
 }
 
-.employee-grid figcaption {
-  margin-top: 8px;
-  font-weight: bold;
-  color: var(--primary-color);
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -269,7 +269,7 @@ article {
   padding: 24px;
   border: 1px solid var(--secondary-color);
   border-radius: 8px;
-  background-color: #f4f6f7;
+  background-color: var(--light-bg);
 }
 
 .field {
@@ -330,7 +330,7 @@ article {
 }
 
 .form-submit {
-  background-color: #c0392b;
+  background-color: var(--button-color);
   color: #fff;
   font-family: var(--heading-font);
   font-size: 1rem;
@@ -343,7 +343,7 @@ article {
 }
 
 .form-submit:hover {
-  background-color: #a93226;
+  background-color: var(--button-hover);
 }
 
 /* ===== Home Page ===== */
@@ -385,7 +385,7 @@ article {
   grid-template-columns: 1fr 1.4fr;
   gap: 32px;
   align-items: center;
-  background-color: #f4f6f7;
+  background-color: var(--light-bg);
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
   padding: 32px;
@@ -416,21 +416,31 @@ article {
   justify-self: start;
 }
 
-.cta {
+.cta,
+.trips-cta {
   text-align: center;
   background-color: var(--primary-color);
   color: #fff;
   border-radius: 10px;
   padding: 40px 32px;
+}
+
+.cta {
   margin: 32px;
 }
 
-.cta h2 {
+.trips-cta {
+  margin: 0 16px 40px;
+}
+
+.cta h2,
+.trips-cta h2 {
   color: #fff;
   margin-bottom: 12px;
 }
 
-.cta p {
+.cta p,
+.trips-cta p {
   max-width: 560px;
   margin: 0 auto 24px;
   color: #fff;
@@ -438,7 +448,7 @@ article {
 
 .cta-button {
   display: inline-block;
-  background-color: #c0392b;
+  background-color: var(--button-color);
   color: #fff;
   font-family: var(--heading-font);
   font-weight: bold;
@@ -449,7 +459,7 @@ article {
 }
 
 .cta-button:hover {
-  background-color: #a93226;
+  background-color: var(--button-hover);
 }
 
 .offerings {
@@ -467,7 +477,8 @@ article {
   gap: 24px;
 }
 
-.offering {
+.offering,
+.trip-card {
   background-color: #fff;
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
@@ -476,11 +487,20 @@ article {
   margin: 0;
 }
 
-.offering img {
+.offering img,
+.trip-card img {
   display: block;
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+.trip-card {
+  transition: transform 0.2s ease;
+}
+
+.trip-card:hover {
+  transform: translateY(-4px);
 }
 
 .offering h3 {
@@ -502,7 +522,7 @@ article {
 
 .trips-hero {
   text-align: center;
-  background-color: #f4f6f7;
+  background-color: var(--light-bg);
   border-bottom: 4px solid var(--accent1-color);
   padding: 40px 16px;
   margin: 0 0 32px;
@@ -525,27 +545,6 @@ article {
   margin: 0 16px 32px;
 }
 
-.trip-card {
-  background-color: #fff;
-  border: 1px solid var(--secondary-color);
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  transition: transform 0.2s ease;
-}
-
-.trip-card:hover {
-  transform: translateY(-4px);
-}
-
-.trip-card img {
-  display: block;
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
 .trip-card h2 {
   color: var(--primary-color);
   margin: 16px 16px 4px;
@@ -561,32 +560,12 @@ article {
 
 .trip-card .trip-meta {
   font-weight: bold;
-  color: #c0392b;
+  color: var(--button-color);
   margin-bottom: 8px;
 }
 
 .trip-card p:last-child {
   margin-bottom: 20px;
-}
-
-.trips-cta {
-  text-align: center;
-  background-color: var(--primary-color);
-  color: #fff;
-  border-radius: 10px;
-  padding: 40px 32px;
-  margin: 0 16px 40px;
-}
-
-.trips-cta h2 {
-  color: #fff;
-  margin-bottom: 12px;
-}
-
-.trips-cta p {
-  color: #fff;
-  max-width: 560px;
-  margin: 0 auto 24px;
 }
 
 .trip-table {
@@ -626,7 +605,7 @@ article {
 }
 
 .trip-table tbody tr:nth-child(even) {
-  background-color: #f4f6f7;
+  background-color: var(--light-bg);
 }
 
 .trip-table tbody tr:hover {
