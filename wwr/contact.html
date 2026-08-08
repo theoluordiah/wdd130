@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | White Water Rafting</title>
+  <meta name="description" content="Contact White Water Rafting to book your next white water adventure or ask us a question. Get our address, phone numbers, email, and send us a message.">
+  <meta name="author" content="Oluchukwu Ordiah">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Rafting Site Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+  <main>
+    <h1 class="contact-title">Contact Us</h1>
+
+    <section class="company-info">
+      <div class="company-details">
+        <h2>Company Information</h2>
+        <address>
+          <p>White Water Rafting</p>
+          <p>123 Rope Road, Raftville, ID 83549</p>
+          <p>Phone: (208) 555-0142</p>
+          <p>Phone: (208) 555-0143</p>
+          <p>Email: <a href="mailto:info@wwrafting.com">info@wwrafting.com</a></p>
+        </address>
+      </div>
+      <div class="company-map">
+        <h2>Find Us on the Map</h2>
+        <iframe src="https://maps.google.com/maps?q=Rexburg%20ID&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <div class="employee-grid">
+        <figure>
+          <img src="images/happy-client.jpg" alt="Sarah Mitchell, owner and head guide of White Water Rafting">
+          <figcaption>Sarah Mitchell - Owner &amp; Head Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting1.jpg" alt="David Chen, senior rafting guide at White Water Rafting">
+          <figcaption>David Chen - Senior Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/rafting2.jpg" alt="Maria Lopez, customer care specialist at White Water Rafting">
+          <figcaption>Maria Lopez - Customer Care Specialist</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <h2>Send Us a Message</h2>
+      <form class="contact-form">
+        <div class="field">
+          <label for="user-name">Your Name</label>
+          <input type="text" id="user-name" name="user_name" placeholder="First and last name" required>
+        </div>
+        <div class="field">
+          <label for="user-email">Your Email</label>
+          <input type="email" id="user-email" name="user_email" placeholder="you@example.com" required>
+        </div>
+        <fieldset class="purpose">
+          <legend>Purpose of Your Message</legend>
+          <div class="radio-options">
+            <label for="purpose-general">
+              <input type="radio" id="purpose-general" name="purpose" value="general" required>
+              General Inquiry
+            </label>
+            <label for="purpose-reservation">
+              <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+              Reservation Question
+            </label>
+            <label for="purpose-suggestion">
+              <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+              Website Suggestion
+            </label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+        </div>
+        <div class="field newsletter">
+          <label for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            Please subscribe me to the monthly newsletter
+          </label>
+        </div>
+        <button type="submit" class="form-submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy;2026 White Water Rafting | Oluchukwu Ordiah</p>
+    <nav class="socialmedia">
+      <a href="https://facebook.com">
+        <img src="images/facebook.svg" alt="Facebook Icon">
+      </a>
+      <a href="https://linkedin.com">
+        <img src="images/linkedin.svg" alt="LinkedIn Icon">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram.svg" alt="Instagram Icon">
+      </a>
+    </nav>
+  </footer>
+</body>
+</html>
