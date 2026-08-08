@@ -227,6 +227,7 @@ article {
 }
 
 .company-map iframe {
+  width: 100%;
   border: 1px solid var(--secondary-color);
   border-radius: 8px;
 }
